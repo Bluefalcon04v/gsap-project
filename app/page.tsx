@@ -1,19 +1,21 @@
 'use client'
-import gsap from "gsap";
-import {useGSAP} from '@gsap/react'
+import { useGSAP } from "@gsap/react";
 import { Navbar } from "./components";
+import Nav_gsap from "./utils/g-home";
+import gsap from "gsap";
+
 
 export default function Home() {
   gsap
-  useGSAP(()=>{
-    gsap.from('#navbar', {
-      x:200, y:400,
+  useGSAP(() => {
+    gsap.from('#hello', {
+      y: 400,
       duration: 1,
-      delay: 2,
+      delay: 1,
     })
   })
   return (
-    <div className="">
-      <Navbar/>
+    <div id="hello" className="">
+      <Navbar />
     </div>);
 }
