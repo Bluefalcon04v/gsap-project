@@ -1,5 +1,4 @@
 import React from 'react'
-import Nav_gsap from '../utils/g-home'
 
 export const Navbar = () => {
   return (
