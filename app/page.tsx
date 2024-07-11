@@ -50,14 +50,15 @@ export default function Home() {
       </div> */}
       <div className="flex justify-center">
 
-        <button className="px-8 py-4 text-xl bg-red-800 " onClick={() => {
-          setCircle(random)
-          setCircle2(randomy)
-        }}>
+        {/* <button className="px-8 py-4 text-xl bg-red-800 " >
           Animate
-        </button>
+        </button> */}
         {/* <div className="circle h-32 w-32 rounded-full bg-yellow-300 "></div> */}
         <Image
+        onClick={() => {
+          setCircle(random)
+          setCircle2(randomy)
+        }}
         height={0}
         width={0}
         src={"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTG4WhIk3C8ybxl-BzYd_NnSrQuh6c4GbUHeA&s"}
